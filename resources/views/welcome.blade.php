@@ -35,19 +35,19 @@
         <div class="offcanvas__option">
             <div class="offcanvas__links">
                 <a href="{{route('login')}}">Sign in</a>
-                <a href="#">FAQs</a>
+             
             </div>
           
         </div>
-        <div class="offcanvas__nav__option">
+        {{-- <div class="offcanvas__nav__option">
             <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
             <a href="#"><img src="img/icon/heart.png" alt=""></a>
             <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
             <div class="price">$0.00</div>
-        </div>
+        </div> --}}
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__text">
-            <p>Free shipping, 30-day return or refund guarantee.</p>
+            <p>5-day return or refund guarantee.</p>
         </div>
     </div>
     <!-- Offcanvas Menu End -->
@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-7">
                         <div class="header__top__left">
-                            <p>Free shipping, 30-day return or refund guarantee.</p>
+                            <p>5-day return or refund guarantee.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
@@ -78,28 +78,21 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="{{asset('img/logo.png.webp')}}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li class="active"><a href="{{route('home')}}">Home</a></li>
-                            <li><a href="">View Collection</a></li>
+                            <li><a href="{{route('collection')}}">View Collection</a></li>
                           
                             {{-- <li><a href="./blog.html">Blog</a></li> --}}
-                            <li><a href="">Contacts</a></li>
+                            <li><a href="{{route('contact')}}">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
-                {{-- <div class="col-lg-3 col-md-3">
-                    <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-                        <div class="price">$0.00</div>
-                    </div>
-                </div> --}}
+               
             </div>
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
@@ -109,7 +102,7 @@
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__items set-bg" data-setbg="{{asset('img/h5sl1-e5b1164ba1758.jpg')}}">
+            <div class="hero__items set-bg" data-setbg="{{asset('img/watch.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-5 col-lg-7 col-md-8">
@@ -129,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero__items set-bg" data-setbg="{{asset('img/h5sl2-915ec481163c3.jpg')}}">
+            <div class="hero__items set-bg" data-setbg="{{asset('img/watch2.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-5 col-lg-7 col-md-8">
@@ -160,7 +153,7 @@
                 <div class="col-lg-7 offset-lg-4">
                     <div class="banner__item">
                         <div class="banner__item__pic">
-                            <img src="{{asset('img/banner/banner-1.jpg.webp')}}" alt="">
+                            <img src="{{asset('inage/1.jpg')}}" alt="">
                         </div>
                         <div class="banner__item__text">
                             <h2>Clothing Collections 2030</h2>
@@ -171,7 +164,7 @@
                 <div class="col-lg-5">
                     <div class="banner__item banner__item--middle">
                         <div class="banner__item__pic">
-                            <img src="{{asset('img/banner/banner-2.jpg.webp')}}" alt="">
+                            <img src="{{asset('inage/2.jpg')}}" alt="">
                         </div>
                         <div class="banner__item__text">
                             <h2>Accessories</h2>
@@ -182,7 +175,7 @@
                 <div class="col-lg-7">
                     <div class="banner__item banner__item--last">
                         <div class="banner__item__pic">
-                            <img src="{{asset('img/banner/banner-3.jpg.webp')}}" alt="">
+                            <img src="{{asset('inage/3.jpg')}}" alt="">
                         </div>
                         <div class="banner__item__text">
                             <h2>Shoes Spring 2030</h2>
@@ -210,7 +203,7 @@
             <div class="row product__filter">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-1.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/1.jpg')}}">
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
@@ -245,7 +238,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-2.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/2.jpg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -279,7 +272,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-3.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/3.jpg')}}">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
@@ -314,7 +307,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-4.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/4.jpg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -348,7 +341,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-5.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/6.jpg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -382,7 +375,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-6.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/7.jpg')}}">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
@@ -417,7 +410,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-7.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/8.jpg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -451,7 +444,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-8.jpg.webp')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/2.jpg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -499,7 +492,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="categories__hot__deal">
-                        <img src="{{asset('img/product-sale.png.webp')}}" alt="">
+                        <img src="{{asset('inage/4.jpg')}}" alt="">
                         <div class="hot__deal__sticker">
                             <span>Sale Of</span>
                             <h5>$29.99</h5>
@@ -619,19 +612,11 @@
                             <a href="#"><img src="img/footer-logo.png" alt=""></a>
                         </div>
                         <p>The customer is at the heart of our unique business model, which includes design.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
+                        <a href="#"><img src="{{asset('img/payment.png.webp')}}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Shopping</h6>
-                        <ul>
-                            <li><a href="#">Clothing Store</a></li>
-                            <li><a href="#">Trending Shoes</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Sale</a></li>
-                        </ul>
-                    </div>
+                   
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer__widget">
@@ -645,45 +630,25 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>NewLetter</h6>
-                        <div class="footer__newslatter">
-                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-                            <form action="#">
-                                <input type="text" placeholder="Your email">
-                                <button type="submit"><span class="icon_mail_alt"></span></button>
-                            </form>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="footer__copyright__text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        
                         <p>Copyright ©
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>2020 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </script>2024 All rights reserved | Built with love <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://mobiverio.com" target="_blank">Mobiverio</a>
                         </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                     
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer Section End -->
-
-    <!-- Search Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
-    <!-- Search End -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -711,8 +676,7 @@
     </script>
 
 
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8e87fe1e0c47bb0c","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.5","token":"cd0b4b3a733644fc843ef0b185f98241"}'
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

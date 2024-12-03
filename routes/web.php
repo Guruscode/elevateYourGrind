@@ -1,14 +1,25 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\AdminController;
+
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\Product2Controller;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+
+Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('/collection', [PagesController::class, 'collection'])->name('collection');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -33,6 +44,29 @@ Route::delete('/cart/{id}', [CartController::class, 'remove'])->name('cart.remov
 
 
 });
+
+Route::prefix('admin')->group(function () {
+    Route::get('/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
+    Route::post('/login', [AdminAuthController::class, 'login']);
+    Route::post('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
+
+    Route::middleware('auth:admin')->group(function () {
+        Route::get('/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+    });
+
+     // Product Routes
+     Route::resource('products', Product2Controller::class);
+
+     // Category Routes
+     Route::resource('categories', CategoryController::class);
+ 
+     // Order Routes
+     Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+     Route::get('orders/{order}', [OrderController::class, 'show'])->name('orders.show');
+     Route::patch('orders/{order}', [OrderController::class, 'update'])->name('orders.update');
+ 
+});
+
 
 
 
