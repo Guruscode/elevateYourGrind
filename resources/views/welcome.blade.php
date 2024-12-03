@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Male-Fashion | Template</title>
+    <title>Elevate your Grind Male-Luxury | Wristwatch</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,17 +34,10 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="#">Sign in</a>
+                <a href="{{route('login')}}">Sign in</a>
                 <a href="#">FAQs</a>
             </div>
-            <div class="offcanvas__top__hover">
-                <span>Usd <i class="arrow_carrot-down"></i></span>
-                <ul>
-                    <li>USD</li>
-                    <li>EUR</li>
-                    <li>USD</li>
-                </ul>
-            </div>
+          
         </div>
         <div class="offcanvas__nav__option">
             <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
@@ -72,17 +65,10 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="#">Sign in</a>
-                                <a href="#">FAQs</a>
+                                <a href="{{route('login')}}">Sign in</a>
+                               
                             </div>
-                            <div class="header__top__hover">
-                                <span>Usd <i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>USD</li>
-                                    <li>EUR</li>
-                                    <li>USD</li>
-                                </ul>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -98,30 +84,22 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contacts</a></li>
+                            <li class="active"><a href="{{route('home')}}">Home</a></li>
+                            <li><a href="">View Collection</a></li>
+                          
+                            {{-- <li><a href="./blog.html">Blog</a></li> --}}
+                            <li><a href="">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3 col-md-3">
+                {{-- <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
                         <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
                         <a href="#"><img src="img/icon/heart.png" alt=""></a>
                         <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
                         <div class="price">$0.00</div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
@@ -136,10 +114,10 @@
                     <div class="row">
                         <div class="col-xl-5 col-lg-7 col-md-8">
                             <div class="hero__text">
-                                <h6 style="color: white !important">Summer Collection</h6>
-                                <h2 style="color: white !important">Fall - Winter Collections 2030</h2>
-                                <p style="color: white !important">A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
-                                <a href="#" class="primary-btn" >Shop now <span class="arrow_right"></span></a>
+                                <h6 style="color: white !important">Precision Engineering</h6>
+                                <h2 style="color: white !important">Elevate Your Grind Signature Series</h2>
+                                <p style="color: white !important">Crafting timeless elegance where innovation meets luxury. Meticulously designed watches that elevate every moment of your journey.</p>
+                                <a href="#" class="primary-btn" >Explore Collection<span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -156,9 +134,9 @@
                     <div class="row">
                         <div class="col-xl-5 col-lg-7 col-md-8">
                             <div class="hero__text">
-                                <h6 style="color: white !important">Summer Collection</h6>
-                                <h2 style="color: white !important">Fall - Winter Collections 2030</h2>
-                                <p style="color: white !important">A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
+                                <h6 style="color: white !important">Limited Edition</h6>
+                                <h2 style="color: white !important">Timeless Precision</h2>
+                                <p style="color: white !important">Elevate Your Grind presents an exclusive collection of haute horlogerie. Uncompromising quality, exceptional design, and supreme craftsmanship.</p>
                                 <a href="#" class="primary-btn" style="color: white !important">Shop now <span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -182,7 +160,7 @@
                 <div class="col-lg-7 offset-lg-4">
                     <div class="banner__item">
                         <div class="banner__item__pic">
-                            <img src="img/banner/banner-1.jpg" alt="">
+                            <img src="{{asset('img/banner/banner-1.jpg.webp')}}" alt="">
                         </div>
                         <div class="banner__item__text">
                             <h2>Clothing Collections 2030</h2>
@@ -193,7 +171,7 @@
                 <div class="col-lg-5">
                     <div class="banner__item banner__item--middle">
                         <div class="banner__item__pic">
-                            <img src="img/banner/banner-2.jpg" alt="">
+                            <img src="{{asset('img/banner/banner-2.jpg.webp')}}" alt="">
                         </div>
                         <div class="banner__item__text">
                             <h2>Accessories</h2>
@@ -204,7 +182,7 @@
                 <div class="col-lg-7">
                     <div class="banner__item banner__item--last">
                         <div class="banner__item__pic">
-                            <img src="img/banner/banner-3.jpg" alt="">
+                            <img src="{{asset('img/banner/banner-3.jpg.webp')}}" alt="">
                         </div>
                         <div class="banner__item__text">
                             <h2>Shoes Spring 2030</h2>
@@ -232,12 +210,12 @@
             <div class="row product__filter">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-1.jpg.webp')}}">
                             <span class="label">New</span>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -267,11 +245,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-2.jpg.webp')}}">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -301,12 +279,12 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-3.jpg.webp')}}">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -336,11 +314,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-4.jpg.webp')}}">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -370,11 +348,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-5.jpg.webp')}}">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -404,12 +382,12 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-6.jpg.webp')}}">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -439,11 +417,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-7.jpg.webp')}}">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -473,11 +451,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('img/product/product-8.jpg.webp')}}">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -521,7 +499,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="categories__hot__deal">
-                        <img src="img/product-sale.png" alt="">
+                        <img src="{{asset('img/product-sale.png.webp')}}" alt="">
                         <div class="hot__deal__sticker">
                             <span>Sale Of</span>
                             <h5>$29.99</h5>
@@ -564,12 +542,12 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="instagram__pic">
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-1.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-2.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-3.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-4.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-5.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('img/instagram/instagram-1.jpg.webp')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('img/instagram/instagram-2.jpg.webp')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="i{{asset('img/instagram/instagram-3.jpg.webp')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('img/instagram/instagram-4.jpg.webp')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('img/instagram/instagram-5.jpg.webp')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('img/instagram/instagram-6.jpg.webp')}}"></div>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -598,7 +576,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{{asset('img/blog/blog-1.jpg.webp')}}"></div>
                         <div class="blog__item__text">
                             <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
                             <h5>What Curling Irons Are The Best Ones</h5>
@@ -608,7 +586,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{{asset('img/blog/blog-2.jpg.webp')}}"></div>
                         <div class="blog__item__text">
                             <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
                             <h5>Eternity Bands Do Last Forever</h5>
@@ -618,7 +596,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{{asset('img/blog/blog-3.jpg.webp')}}"></div>
                         <div class="blog__item__text">
                             <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
                             <h5>The Health Benefits Of Sunglasses</h5>
