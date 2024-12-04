@@ -34,7 +34,7 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="{{route('login')}}">Sign in</a>
+                {{-- <a href="{{route('login')}}">Sign in</a> --}}
             </div>
         </div>
         <div id="mobile-menu-wrap"></div>
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="{{asset('img/logo.png.webp')}}" alt=""></a>
+                        <a href="{{route('home')}}" style="font-size: 24px; color:black; font:bolder;">Elevate your Grind <span style="color: red">.</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">

@@ -7,39 +7,21 @@ use App\Models\Product;
 
 class CartController extends Controller
 {
-    public function index()
+    public function store(Request $request)
     {
-        $cart = session()->get('cart', []);
-        return view('cart.index', compact('cart'));
-    }
-
-    public function add(Request $request, $id)
-    {
-        $product = Product::findOrFail($id);
-        $cart = session()->get('cart', []);
-
-        // Add product to cart
-        if (isset($cart[$id])) {
-            $cart[$id]['quantity'] += $request->quantity;
-        } else {
-            $cart[$id] = [
-                "name" => $product->name,
-                "quantity" => $request->quantity,
-                "price" => $product->price,
-                "image" => $product->image,
-            ];
+        try {
+            $cart = $request->input(); // Retrieve cart data from request
+            session(['cart' => $cart]); // Save to session
+    
+            return response()->json(['success' => true]);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => $e->getMessage()], 500);
         }
-
-        session()->put('cart', $cart);
-        return redirect()->route('cart.index')->with('success', 'Product added to cart!');
     }
-
-    public function remove($id)
+    
+    public function show()
     {
-        $cart = session()->get('cart', []);
-        unset($cart[$id]);
-        session()->put('cart', $cart);
-
-        return redirect()->route('cart.index')->with('success', 'Product removed from cart.');
+        $cart = session('cart', []); // Retrieve cart data from session
+        return view('cart', ['cart' => $cart]);
     }
 }

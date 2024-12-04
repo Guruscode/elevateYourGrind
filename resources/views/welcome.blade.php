@@ -34,17 +34,12 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="{{route('login')}}">Sign in</a>
+                <a ">Sign in</a>
              
             </div>
           
         </div>
-        {{-- <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-            <a href="#"><img src="img/icon/heart.png" alt=""></a>
-            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-            <div class="price">₦0.00</div>
-        </div> --}}
+       
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__text">
             <p>5-day return or refund guarantee.</p>
@@ -65,7 +60,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="{{route('login')}}">Sign in</a>
+                                <a ">Sign in</a>
                                
                             </div>
                            
@@ -78,7 +73,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="{{asset('img/logo.png.webp')}}" alt=""></a>
+                        <a href="{{route('home')}}" style="font-size: 24px; color:black; font:bolder;">Elevate your Grind <span style="color: red">.</span></a>
+                        {{-- <a href="./index.html"><img src="{{asset('img/logo.png.webp')}}" alt=""></a> --}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -86,12 +82,23 @@
                         <ul>
                             <li class="active"><a href="{{route('home')}}">Home</a></li>
                             <li><a href="{{route('collection')}}">View Collection</a></li>
-                          
+                            <li><a href="{{route('cart.show')}}">View Cart</a></li>
                             {{-- <li><a href="./blog.html">Blog</a></li> --}}
                             <li><a href="{{route('contact')}}">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="#" id="cart-link"  style="color: red !important; font-size:18px">
+                            <img src="{{ asset('img/icon/cart.png.webp') }}" alt="">
+                            <span id="cart-count">0</span> items
+                        </a>
+                       
+                    </div>
+                </div>
+                
+                
                
             </div>
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
@@ -221,7 +228,10 @@
                         </div>
                         <div class="product__item__text">
                             <h6>Piqué Biker Jacket</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <a href="#" class="add-cart" 
+                            data-product-name="Piqué Biker Jacket" 
+                            data-product-price="67.24" 
+                            data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
@@ -255,7 +265,10 @@
                         </div>
                         <div class="product__item__text">
                             <h6>Piqué Biker Jacket</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <a href="#" class="add-cart" 
+                            data-product-name="Piqué Biker Jacket" 
+                            data-product-price="67.24" 
+                            data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
@@ -290,7 +303,10 @@
                         </div>
                         <div class="product__item__text">
                             <h6>Multi-pocket Chest Bag</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <a href="#" class="add-cart" 
+                            data-product-name="Piqué Biker Jacket" 
+                            data-product-price="67.24" 
+                            data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -324,7 +340,10 @@
                         </div>
                         <div class="product__item__text">
                             <h6>Diagonal Textured Cap</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <a href="#" class="add-cart" 
+                            data-product-name="Piqué Biker Jacket" 
+                            data-product-price="67.24" 
+                            data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
@@ -358,7 +377,10 @@
                         </div>
                         <div class="product__item__text">
                             <h6>Lether Backpack</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
+                            <a href="#" class="add-cart" 
+                            data-product-name="Piqué Biker Jacket" 
+                            data-product-price="67.24" 
+                            data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
@@ -690,8 +712,60 @@
 
         gtag('config', 'UA-23581568-13');
     </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
+    // Update cart count display
+    function updateCartCount() {
+        document.getElementById('cart-count').textContent = cartCount;
+    }
 
+    // Add to Cart event listener
+    document.querySelectorAll('.add-cart').forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            
+            // Get product details from data attributes
+            const productId = this.getAttribute('data-product-id');
+            const productName = this.getAttribute('data-product-name');
+            const productPrice = this.getAttribute('data-product-price');
+
+            // Check if product is already in the cart
+            const existingProduct = cart.find(product => product.id === productId);
+
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+            } else {
+                cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+            }
+
+            // Update localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Increment cart count and update display
+            cartCount++;
+            updateCartCount();
+
+            console.log(cart); // Display cart contents in console for testing
+        });
+    });
+
+    // Redirect to cart page on click
+    document.querySelector('.header__nav__option a').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Redirect to cart page
+        window.location.href = '/cart'; // Update this URL to match your cart page
+    });
+
+    // Initialize cart count display
+    updateCartCount();
+});
+
+    </script>
+    
 
 </body>
 
