@@ -21,6 +21,109 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+<style>
+    /* General Styles */
+    .contact-section {
+        background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
+        padding: 60px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Contact Form Section */
+    .contact__form__title h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .contact__form__title p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 30px;
+    }
+    
+    .contact-section input,
+    .contact-section textarea {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #333;
+        background: #fff;
+    }
+    
+    .contact-section input:focus,
+    .contact-section textarea:focus {
+        border-color: #c19a6b;
+        outline: none;
+        box-shadow: 0 0 8px rgba(193, 154, 107, 0.3);
+    }
+    
+    .contact-section textarea {
+        height: 150px;
+        resize: none;
+    }
+    
+    /* Submit Button */
+    .site-btn {
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 16px;
+        color: #fff;
+        background: #c19a6b;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        text-transform: uppercase;
+    }
+    
+    .site-btn:hover {
+        background: #a67b50;
+    }
+    
+    /* Contact Info Section */
+    .contact__info {
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+    
+    .contact__info h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .contact__info ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .contact__info ul li {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    
+    .contact__info ul li i {
+        color: #c19a6b;
+        margin-right: 10px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .contact__info {
+            margin-top: 30px;
+        }
+    }
+    </style>
 </head>
 
 <body>
