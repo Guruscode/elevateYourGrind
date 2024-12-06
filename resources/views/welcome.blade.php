@@ -73,8 +73,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="{{route('home')}}" style="font-size: 24px; color:black; font:bolder;">Elevate your Grind <span style="color: red">.</span></a>
-                        {{-- <a href="./index.html"><img src="{{asset('img/logo.png.webp')}}" alt=""></a> --}}
+                        {{-- <a href="{{route('home')}}" style="font-size: 24px; color:black; font:bolder;">Elevate your Grind <span style="color: red">.</span></a> --}}
+                        <a href="./index.html"><img src="{{asset('img/logo.png')}}" alt="" width="82" height="48"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -116,8 +116,8 @@
                             <div class="hero__text">
                                 <h6 style="color: white !important">Precision Engineering</h6>
                                 <h2 style="color: white !important">Elevate Your Grind Signature Series</h2>
-                                <p style="color: white !important">Crafting timeless elegance where innovation meets luxury. Meticulously designed watches that elevate every moment of your journey.</p>
-                                <a href="#" class="primary-btn" >Explore Collection<span class="arrow_right"></span></a>
+                                <p style="color: #fff !important; font-size:28px; font-weight:900">Smoking Hot Deals on Timeless Pieces</p>
+                                <a href="{{route('collection')}}" class="primary-btn" >Explore Collection<span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -136,7 +136,7 @@
                             <div class="hero__text">
                                 <h6 style="color: white !important">Limited Edition</h6>
                                 <h2 style="color: white !important">Timeless Precision</h2>
-                                <p style="color: white !important">Elevate Your Grind presents an exclusive collection of haute horlogerie. Uncompromising quality, exceptional design, and supreme craftsmanship.</p>
+                                <p style="color: #fff !important; font-size:28px; font-weight:900">Smoking Hot Deals on Timeless Pieces</p>
                                 <a href="#" class="primary-btn" style="color: white !important">Shop now <span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -153,58 +153,9 @@
     </section>
     <!-- Hero Section End -->
 
-   <!-- Banner Section Begin -->
-<section class="banner spad">
-    <div class="container">
-        <div class="row">
-            <!-- First Banner Item -->
-            <div class="col-lg-7 offset-lg-4">
-                <div class="banner__item">
-                    <div class="banner__item__pic">
-                        <img src="{{asset('inage/1.jpg')}}" alt="Luxury Wristwatch">
-                    </div>
-                    <div class="banner__item__text">
-                        <h2>Timeless Elegance</h2>
-                        <p>Discover the newest Collection of Luxury Wristwatches</p>
-                        <a href="{{route('collection')}}">Explore Collection</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Banner Item -->
-            <div class="col-lg-5">
-                <div class="banner__item banner__item--middle">
-                    <div class="banner__item__pic">
-                        <img src="{{asset('inage/2.jpg')}}" alt="Premium Watch Accessories">
-                    </div>
-                    <div class="banner__item__text">
-                        <h2>Premium Accessories</h2>
-                        <p>Complement Your Style with Exquisite Add-ons</p>
-                        <a href="{{route('collection')}}">Shop Accessories</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Third Banner Item -->
-            <div class="col-lg-7">
-                <div class="banner__item banner__item--last">
-                    <div class="banner__item__pic">
-                        <img src="{{asset('inage/3.jpg')}}" alt="Limited Edition Watches">
-                    </div>
-                    <div class="banner__item__text">
-                        <h2>Limited Edition</h2>
-                        <p>Exclusive Timepieces for Discerning Collectors</p>
-                        <a href="{{route('collection')}}">View Limited Editions</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Banner Section End -->
-
+<br><br>
     <!-- Product Section Begin -->
-    <section class="product spad">
+    <section class="product spad" style="margin-top: 22px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -218,7 +169,7 @@
             <div class="row product__filter">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/1.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-1.jpeg')}}">
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
@@ -227,9 +178,9 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Piqué Biker Jacket</h6>
+                            <h6>G-shock Protection</h6>
                             <a href="#" class="add-cart" 
-                            data-product-name="Piqué Biker Jacket" 
+                            data-product-name="G-shock Protection" 
                             data-product-price="67.24" 
                             data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
@@ -256,7 +207,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/2.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-2.jpeg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -293,7 +244,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/3.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-9.jpeg')}}">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
@@ -302,9 +253,9 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Multi-pocket Chest Bag</h6>
+                            <h6>Poedagar</h6>
                             <a href="#" class="add-cart" 
-                            data-product-name="Piqué Biker Jacket" 
+                            data-product-name="Poedagar" 
                             data-product-price="67.24" 
                             data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
@@ -331,7 +282,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/4.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-4.jpeg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -339,9 +290,9 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Diagonal Textured Cap</h6>
+                            <h6>Poedagar</h6>
                             <a href="#" class="add-cart" 
-                            data-product-name="Piqué Biker Jacket" 
+                            data-product-name="Poedagar" 
                             data-product-price="67.24" 
                             data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
@@ -368,7 +319,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/6.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-11.jpeg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -376,9 +327,9 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Lether Backpack</h6>
+                            <h6>Wristwatch case</h6>
                             <a href="#" class="add-cart" 
-                            data-product-name="Piqué Biker Jacket" 
+                            data-product-name="Wristwatch case" 
                             data-product-price="67.24" 
                             data-product-id="1">+ Add To Cart</a>
                             <div class="rating">
@@ -405,7 +356,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/7.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-6.jpeg')}}">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
@@ -414,7 +365,7 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Ankle Boots</h6>
+                            <h6>Cartier</h6>
                             <a href="#" class="add-cart">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
@@ -440,7 +391,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/8.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-7.jpeg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -448,7 +399,7 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>T-shirt Contrast Pocket</h6>
+                            <h6>Casio</h6>
                             <a href="#" class="add-cart">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
@@ -474,7 +425,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('inage/2.jpg')}}">
+                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-8.jpeg')}}">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
@@ -482,7 +433,7 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Basic Flowing Scarf</h6>
+                            <h6>Poedagar</h6>
                             <a href="#" class="add-cart">+ Add To Cart</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
@@ -525,7 +476,7 @@
             <!-- Hot Deal Section -->
             <div class="col-lg-4">
                 <div class="categories__hot__deal">
-                    <img src="{{asset('inage/4.jpg')}}" alt="Luxury Watch Hot Deal">
+                    <img src="{{asset('product/prod-8.jpeg')}}" alt="Luxury Watch Hot Deal">
                     <div class="hot__deal__sticker">
                         <span>Sale Of</span>
                         <h5>₦999.99</h5>
@@ -537,7 +488,7 @@
             <div class="col-lg-4 offset-lg-1">
                 <div class="categories__deal__countdown">
                     <span>Deal Of The Week</span>
-                    <h2>Rose Gold Chronograph</h2>
+                    <h2>Poedagar</h2>
                     <div class="categories__deal__countdown__timer" id="countdown">
                         <div class="cd-item">
                             <span>5</span>
@@ -556,7 +507,7 @@
                             <p>Seconds</p>
                         </div>
                     </div>
-                    <a href="#" class="primary-btn">Shop now</a>
+                    <a href="{{route('collection')}}" class="primary-btn">Shop now</a>
                 </div>
             </div>
         </div>
@@ -571,12 +522,12 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="instagram__pic">
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('inage/2.jpg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('inage/2.jpg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="i{{asset('inage/2.jpg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('inage/2.jpg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('inage/2.jpg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('inage/2.jpg')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-1.jpeg')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-11.jpeg')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="i{{asset('product/prod-2.jpeg')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-10.jpeg')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-5.jpeg')}}"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-8.jpeg')}}"></div>
                     </div>
                 </div>
                 <div class="col-lg-4">
