@@ -249,7 +249,7 @@
               </div>
               <div class="breadcumb-content-menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="{{route('home')}}">Home</a></li>
                   <li>
                     <a href="#">Shop</a>
                     <ul class="sub-menu">
@@ -274,231 +274,178 @@
     <!-- start-shop-section  -->
     <!--==================================================-->
 
-
-
-    <!--==================================================-->
-    <!-- Start Cart Section -->
-    <!--==================================================-->
-    <section class="cart-section">
-        <div class="container">
-          <div class="row mb-n6 mb-lg-n10">
-            <h2 class="cart-title mb-4">Cart List</h2>
-  
-            <div class="col-12 mb-6 mb-lg-10">
-              <!-- Cart Table For Tablet & Up Devices Start -->
-              <table
-                class="cart-table table table-bordered text-center align-middle mb-6 d-none d-md-table"
-              >
-                <thead>
-                  <tr>
-                    <th class="imag">Image</th>
-                    <th class="titl">Product</th>
-                    <th class="pric">Price</th>
-                    <th class="quantit">Quantity</th>
-                    <th class="tota">Total</th>
-                    <th class="remov">Remove</th>
-                  </tr>
-                </thead>
-                <tbody class="border-top-0">
-                  <tr data-id="1">
-                    <th>
-                      <a href="shop-details.html">
-                        <img
-                          class="cart-thumb"
-                          src="assets/images/home-1/sel-1.png"
-                          alt="thumb"
-                        />
-                      </a>
-                    </th>
-                    <td><a href="shop-details.html">Make Your Gay</a></td>
-                    <td class="price">$350</td>
-                    <td>
-                      <div class="product-quantity-count">
-                        <input
-                          class="quantity"
-                          type="number"
-                          name="quantity"
-                          min="1"
-                          value="1"
-                        />
-                      </div>
-                    </td>
-                    <td class="total">$350.00</td>
-                    <td>
-                      <button class="remove-btn">
-                        <i class="fas fa-times"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>
-                      <a href="shop-details.html">
-                        <img
-                          class="cart-thumb"
-                          src="assets/images/home-1/sel-2.png"
-                          alt="thumb"
-                        />
-                      </a>
-                    </th>
-                    <td><a href="shop-details.html">Butter Day</a></td>
-                    <td class="price">$450</td>
-                    <td>
-                      <div class="product-quantity-count">
-                        <input
-                          class="quantity"
-                          type="number"
-                          name="quantity"
-                          min="1"
-                          value="1"
-                        />
-                      </div>
-                    </td>
-                    <td class="total">$450.00</td>
-                    <td>
-                      <button class="remove-btn">
-                        <i class="fas fa-times"></i>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- Cart Table For Tablet & Up Devices End -->
-  
-              <!-- Cart Table For Mobile Devices Start -->
-              <div class="cart-products-mobile d-md-none">
-                <div class="cart-product-mobile">
-                  <div class="cart-product-mobile-thumb">
-                    <a href="shop-details.html" class="cart-product-mobile-image">
-                      <img
-                        src="assets/images/home-1/bl-d-1.png"
-                        alt="Make Your Gay"
-                        width="90"
-                        height="103"
-                      />
-                    </a>
-                    <button class="cart-product-mobile-remove">
-                      <i class="bi bi-x-circle"></i>
-                    </button>
-                  </div>
-                  <div class="cart-product-mobile-content">
-                    <h5 class="cart-product-mobile-title">
-                      <a href="shop-details.html">Make Your Gay</a>
-                    </h5>
-                    <span class="cart-product-mobile-quantity"
-                      >1 x <span class="price2">$118.00</span></span
-                    >
-                    <span class="cart-product-mobile-total"
-                      ><b>Total:</b> <span class="total2">$118.00</span>
-                    </span>
-                    <div class="product-quantity-count">
-                      <input
-                        class="quantity2"
-                        type="number"
-                        name="quantity"
-                        min="1"
-                        value="1"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="cart-product-mobile">
-                  <div class="cart-product-mobile-thumb">
-                    <a href="shop-details.html" class="cart-product-mobile-image">
-                      <img
-                        src="assets/images/home-1/bl-d-2.png"
-                        alt=""
-                        width="90"
-                        height="103"
-                      />
-                    </a>
-                    <button class="cart-product-mobile-remove">
-                      <i class="bi bi-x-circle"></i>
-                    </button>
-                  </div>
-                  <div class="cart-product-mobile-content">
-                    <h5 class="cart-product-mobile-title">
-                      <a href="shop-details.html">Butter Day</a>
-                    </h5>
-                    <span class="cart-product-mobile-quantity"
-                      >1 x <span class="price2">$118.00</span></span
-                    >
-                    <span class="cart-product-mobile-total"
-                      ><b>Total:</b> <span class="total2">$118.00</span>
-                    </span>
-                    <div class="product-quantity-count">
-                      <input
-                        class="quantity2"
-                        type="number"
-                        name="quantity"
-                        min="1"
-                        value="1"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Cart Table For Mobile Devices End -->
-  
-              <!-- Cart Action Buttons Start -->
-              <div class="row justify-content-between gap-3">
-                <div class="col-auto cart-btn">
-                  <button>
-                    Continue Shopping <i class="bi bi-arrow-right-short"></i>
-                    <span></span>
-                  </button>
-                </div>
-                <div class="col-auto d-flex flex-wrap gap-3 cart-btn">
-                  <button>
-                    Update Cart <i class="bi bi-arrow-right-short"></i>
-                    <span></span>
-                  </button>
-                  <button>
-                    Clear Cart <i class="bi bi-arrow-right-short"></i>
-                    <span></span>
-                  </button>
-                </div>
-              </div>
-              <!-- Cart Action Buttons End -->
+    <div class="shop-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="shop-sub-title">
+              <p>Shop FullWidth</p>
             </div>
-  
-            <div class="col-lg-6"></div>
-  
-            <!-- Cart Totals Start -->
-            <div class="col-lg-6 d-none d-md-table">
-              <div class="cart-totals">
-                <h4 class="title">Cart totals</h4>
-                <table class="table table-borderless bg-transparent">
-                  <tbody>
-                    <tr class="subtotal">
-                      <th>Subtotal</th>
-                      <td><span id="subtotal">£242.00</span></td>
-                    </tr>
-                    <tr class="shopping-fee">
-                      <th>Shopping Fee</th>
-                      <td><span id="shopping">$5.00</span></td>
-                    </tr>
-                    <tr class="total">
-                      <th>Total</th>
-                      <td>
-                        <strong><span id="total">£242.00</span></strong>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button class="show-alert btn btn-dark">
-                  Proceed to checkout
-                </button>
+          </div>
+          <div class="col-lg-6">
+            <div class="shop-form-box">
+              <div class="form-box">
+                <select>
+                  <option value="Select Your Doctor">Default Relevance</option>
+                  <option value="CRM">Name (A-Z)</option>
+                  <option value="Careers">Name (Z-A)</option>
+                  <option value="E-Commerce">Price(Hight>Low)</option>
+                  <option value="ERP">Price(Low>Hight)</option>
+                  <option value="Production">Rating(Lowest)</option>
+                </select>
               </div>
             </div>
           </div>
         </div>
-      </section>
-  
-      <!--==================================================-->
-      <!-- End Cart Section -->
-      <!--==================================================-->
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-1.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$250</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-2.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$340</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-3.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$280</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-4.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$370</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-3.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$420</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-1.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$290</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-4.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$560</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-2.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$650</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-3.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$780</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-4.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$470</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-2.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$360</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-shop">
+              <div class="shop-thumb">
+                <img src="assets/images/home-1/sel-4.png" alt="" />
+              </div>
+              <div class="section-title">
+                <h4>CATIER</h4>
+                <span>$650</span>
+              </div>
+              <cart-button class="cart-button">Add to cart</cart-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  
     <!--==================================================-->
     <!-- end-shop-section  -->
     <!--==================================================-->

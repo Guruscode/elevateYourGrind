@@ -17,9 +17,10 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('/shop', [PagesController::class, 'shop'])->name('shop');
 Route::get('/collection', [PagesController::class, 'collection'])->name('collection');
-
+Route::post('/cart/store', [CartController::class, 'store'])->name('cart.store');
+Route::get('/cart', [CartController::class, 'show'])->name('cart.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -42,8 +43,7 @@ Route::middleware(['auth'])->group(function () {
 // Route::post('/cart/{id}', [CartController::class, 'add'])->name('cart.add');
 // Route::delete('/cart/{id}', [CartController::class, 'remove'])->name('cart.remove');
 
-Route::post('/cart/store', [CartController::class, 'store'])->name('cart.store');
-Route::get('/cart', [CartController::class, 'show'])->name('cart.show');
+
 
 });
 

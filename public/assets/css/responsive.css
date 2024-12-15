@@ -1,0 +1,607 @@
+/* Normal desktop :1400px. */
+
+@media (min-width: 1400px) and (max-width: 1600px) {}
+
+/* Normal desktop :1300px. */
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .hero-title h1 {
+        font-size: 80px;
+    }
+    .slider-title h2 {
+        font-size: 70px;
+    }
+    .hero-number {
+        position: absolute;
+        right: 180px;
+    }
+    /*==========about-section=============*/
+    .about-thumb img {
+        width: 100%;
+    }
+    .about-shape {
+        top: 125px;
+        left: 435px;
+    }
+    .style h2 {
+        width: 100%;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 380px;
+    }
+    /*==========feature-section=============*/
+    .feature-thumb img {
+        height: 392px;
+    }
+    .section-title h4 {
+        font-size: 20px;
+    }
+    .feature-two-section .feature-thumb img {
+        height: 620px;
+    }
+    /*========subscribe Area responsive===========*/
+    .subscribe-form::before {
+        left: 663px;
+    }
+    /*========cart Area responsive===========*/
+    .cart-button {
+        left: 70px;
+    }
+}
+
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    /*========slide Area responsive===========*/
+    .hero-title h1 {
+        font-size: 70px;
+    }
+    .slider-title h2 {
+        font-size: 68px;
+    }
+    .hero-number {
+        right: 130px;
+    }
+    /*========about-section===========*/
+    .about-shape {
+        top: 120px;
+        left: 390px;
+    }
+    .style h2 {
+        width: 100%;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    /*==========feature-section=============*/
+    .feature-thumb img {
+        height: 392px;
+    }
+    .section-title h4 {
+        font-size: 20px;
+    }
+    .feature-two-section .feature-thumb img {
+        height: 620px;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 380px;
+    }
+    /*========subscribe Area responsive===========*/
+    .subscribe-form::before {
+        left: 612px;
+    }
+    /*========cart Area responsive===========*/
+    .cart-button {
+        left: 70px;
+    }
+}
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Trendita_menu>ul>li {
+        margin-right: 28px;
+    }
+    /*========silder-responsive===========*/
+    .slider-title h2 {
+        font-size: 65px;
+    }
+    .slider-title span {
+        font-size: 65px;
+    }
+    .hero-title h1 {
+        font-size: 50px;
+    }
+    /*========about-responsive===========*/
+    .style h2 {
+        width: 100%;
+        font-size: 30px;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    .about-thumb {
+        left: 0;
+    }
+    .about-shape {
+        top: 100px;
+        left: 340px;
+    }
+    /*========feature Area responsive===========*/
+    .feature-thumb img {
+        height: 385px;
+    }
+    .sel-button {
+        left: 55px;
+    }
+    .sel-content h4 {
+        font-size: 12px;
+    }
+    .feature-two-section .feature-thumb img {
+        height: 615px;
+    }
+    /*========blog Area responsive===========*/
+    .blog-submit-button {
+        right: 30px;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 305px;
+    }
+    .single_team:hover .single_team_icon {
+        top: 85%;
+    }
+    /*=======cart Area responsive===========*/
+    .cart-button {
+        bottom: 105px;
+        left: 60px;
+    }
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sticky {
+        position: absolute !important;
+    }
+    .Trendita_nav_manu {
+        display: none;
+    }
+    .header-src-btn {
+        display: none;
+    }
+    /*========slide-responsive===========*/
+    .hero-title h1 {
+        font-size: 70px;
+        color: rgb(187, 157, 123);
+    }
+    .slider-title h2 {
+        font-size: 70px;
+    }
+    .slider-title span {
+        font-size: 70px;
+    }
+    .hero-contact {
+        display: none;
+    }
+    /*========about-responsive===========*/
+    .style h2 {
+        width: 100%;
+        font-size: 30px;
+    }
+    .section-title h2 {
+        font-size: 35px;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    .about-thumb {
+        left: 0;
+    }
+    /*========feature-responsive===========*/
+    .feature-section .section-title p {
+        width: 100%;
+    }
+    .feature-thumb img {
+        width: 338px;
+        height: 390px;
+    }
+    .section-button {
+        margin-bottom: 30px;
+    }
+    .feature-two-section .feature-thumb img {
+        height: 620px;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 355px;
+    }
+    /*========subscribe-responsive===========*/
+    .subscribe-form::before {
+        top: 202px;
+        left: 38px;
+    }
+    .subscribe-form input {
+        margin: 20px 0 25px;
+    }
+    /*========counter-responsive===========*/
+    .counter-title h1 {
+        font-size: 35px;
+    }
+    /*========breadcumb-responsive===========*/
+    .breadcumb-title h1 {
+        font-size: 35px;
+    }
+}
+
+/* Tablet desktop :600px. */
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .sticky {
+        position: absolute !important;
+    }
+    .Trendita_nav_manu {
+        display: none;
+    }
+    .header-src-btn {
+        display: none;
+    }
+    /*========slider-responsive===========*/
+    .slider-title span {
+        font-size: 60px;
+        margin: 20px 0 15px;
+    }
+    .hero-contact {
+        display: none;
+    }
+    .slider-title p {
+        width: 100%;
+    }
+    .hero-title h1 {
+        font-size: 60px;
+        color: rgb(187, 157, 123);
+    }
+    /*========about-responsive===========*/
+    .style h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .about-thumb img {
+        margin-bottom: 30px;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    .about-thumb {
+        left: 0;
+    }
+    .about-shape {
+        top: 120px;
+        left: 410px;
+    }
+    .section-button {
+        margin-bottom: 30px;
+    }
+    /*========feature Area responsive===========*/
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .feature-section .section-title p {
+        width: 100%;
+    }
+    .feature-thumb img {
+        width: 512px;
+        height: 390px;
+    }
+    .feature-two-section .feature-thumb img {
+        width: 515px;
+        height: 622px;
+    }
+    /*========subscribe-responsive===========*/
+    .subscribe-form::before {
+        top: 194px;
+        left: 45px;
+    }
+    .subscribe-form input {
+        margin: 20px 0 25px;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 580px;
+    }
+    .single_team:hover .single_team_icon {
+        top: 90%;
+    }
+    .single_team:hover .single_team_title {
+        top: 80%;
+    }
+    /*========counter Area responsive===========*/
+    .counter-title h1 {
+        font-size: 35px;
+    }
+    /*========cart Area responsive===========*/
+    .cart-button {
+        left: 190px;
+        width: 25%;
+    }
+    /*========breadcumb-responsive===========*/
+    .breadcumb-title h1 {
+        font-size: 30px;
+    }
+}
+
+/* small mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    .sticky {
+        position: absolute !important;
+    }
+    .Trendita_nav_manu {
+        display: none;
+    }
+    .header-src-btn {
+        display: none;
+    }
+    /*========slider-responsive===========*/
+    .hero-contact {
+        display: none;
+    }
+    .slider-title h2 {
+        font-size: 60px;
+    }
+    .slider-title span {
+        font-size: 60px;
+        margin: 20px 0 15px;
+    }
+    .slider-title p {
+        width: 100%;
+    }
+    .hero-button a {
+        font-size: 13px;
+    }
+    .hero-number {
+        display: none;
+    }
+    .hero-title h1 {
+        font-size: 60px;
+        color: rgb(187, 157, 123);
+    }
+    .hero-disc p {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .slider-button {
+        display: none;
+    }
+    /*========about-responsive===========*/
+    .style h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+    .about-thumb img {
+        margin-bottom: 30px;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    .about-thumb {
+        left: 0;
+    }
+    .section-button a {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+    /*========feature Area responsive===========*/
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .feature-section .section-title p {
+        width: 100%;
+    }
+    .feature-thumb img {
+        width: 455px;
+        height: 390px;
+    }
+    .section-button {
+        margin-bottom: 30px;
+    }
+    .feature-two-section .feature-thumb img {
+        width: 455px;
+        height: 625px;
+    }
+    /*========service-responsive===========*/
+    .service-section {
+        background-image: none;
+    }
+    /*========subscribe-section responsive===========*/
+    .subscribe-form::before {
+        top: 194px;
+        left: 15px;
+    }
+    .subscribe-form input {
+        margin: 20px 0 25px;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 510px;
+    }
+    .single_team:hover .single_team_icon {
+        top: 88%;
+    }
+    .single_team:hover .single_team_title {
+        top: 77%;
+    }
+    /*========counter Area responsive===========*/
+    .counter-title h1 {
+        font-size: 35px;
+    }
+    /*========breadcumb-responsive===========*/
+    .breadcumb-title h1 {
+        font-size: 35px;
+    }
+    /*========shop-details Area responsive===========*/
+    .section-title h4 {
+        font-size: 20px;
+    }
+    .shop-details-content h2 {
+        font-size: 20px;
+    }
+    /*========cart Area responsive===========*/
+    .cart-button {
+        left: 150px;
+        width: 30%;
+    }
+}
+
+/* small mobile :320px. */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .Trendita_nav_manu {
+        display: none;
+    }
+    .sticky {
+        position: absolute !important;
+    }
+    .header-src-btn {
+        display: none;
+    }
+    /*========slider-responsive===========*/
+    .hero-contact {
+        display: none;
+    }
+    .hero-number {
+        display: none;
+    }
+    .hero-title h1 {
+        font-size: 50px;
+        color: rgb(187, 157, 123);
+    }
+    .hero-disc p {
+        width: 100%;
+        margin-top: 55px;
+    }
+    .slider-button {
+        display: none;
+    }
+    .slider-title h5 {
+        font-size: 14px;
+    }
+    .slider-title h2 {
+        font-size: 50px;
+    }
+    .slider-title span {
+        font-size: 50px;
+        margin: 25px 0 20px;
+    }
+    .slider-title p {
+        width: 100%;
+    }
+    /*========about-responsive===========*/
+    .style h2 {
+        width: 100%;
+    }
+    .about-thumb img {
+        margin-bottom: 30px;
+    }
+    .section-title p {
+        width: 100%;
+    }
+    .about-thumb {
+        left: 0;
+    }
+    .section-button2 a {
+        font-size: 14px;
+        padding: 12px 20px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+    }
+    /*========feature Area responsive===========*/
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .feature-section .section-title p {
+        width: 100%;
+    }
+    .section-button a {
+        font-size: 14px;
+        padding: 12px 20px;
+        margin-bottom: 30px;
+    }
+    .feature-two-section .feature-thumb img {
+        height: 625px;
+    }
+    .style-04 {
+        left: 90px;
+    }
+    /*========service-responsive===========*/
+    .service-section {
+        background-image: none;
+    }
+    /*==========blog Area responsive===========*/
+    .section-title h4 {
+        font-size: 20px;
+    }
+    /*========subscribe-section responsive===========*/
+    .subscribe-form::before {
+        top: 192px;
+        left: 15px;
+    }
+    .subscribe-form input {
+        margin: 20px 0 25px;
+    }
+    .footer-bottom-content h4 {
+        font-size: 13px;
+    }
+    /*==========team-section=============*/
+    .single_team_title {
+        top: 305px;
+    }
+    .single_team_title span {
+        font-size: 14px;
+    }
+    .single_team_title h4 {
+        font-size: 20px;
+    }
+    .single_team:hover .single_team_icon {
+        top: 83%;
+    }
+    .single_team:hover .single_team_title {
+        top: 68%;
+    }
+    /*========counter Area responsive===========*/
+    .counter-title h1 {
+        font-size: 35px;
+    }
+    /*========blog-details Area responsive===========*/
+    .blog-details-social-icon ul li a {
+        margin-left: 5px;
+    }
+    .blog-submit-button {
+        right: 30px;
+    }
+    .rpost-content h5 a {
+        font-size: 16px;
+    }
+    .rpost-content span {
+        font-size: 14px;
+    }
+    .product-quantity-count input {
+        width: 100%;
+    }
+    /*========shop-details Area responsive===========*/
+    .section-title h4 {
+        font-size: 15px;
+    }
+    .shop-details-content h2 {
+        font-size: 16px;
+    }
+    /*========breadcumb-responsive===========*/
+    .breadcumb-title h1 {
+        font-size: 30px;
+    }
+}

@@ -1,723 +1,1075 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Male_Fashion Template">
-    <meta name="keywords" content="Male_Fashion, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elevate your Grind Male-Luxury | Wristwatch</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Elevate Your Grind - </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.png')}}" />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" type="text/css" media="all" />
+    <!-- carousel CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}" type="text/css" media="all" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}" type="text/css" media="all" />
+    <!-- animated-text CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/animated-text.css')}}" type="text/css" media="all" />
+    <!-- font-awesome CSS -->
+    {{-- <link rel="stylesheet" href="{{asset('assets/css/all.min.css')}}" type="text/css" media="all" /> --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- font-flaticon CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/flaticon.css')}}" type="text/css" media="all" />
+    <!-- theme-default CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/theme-default.css')}}" type="text/css" media="all" />
+    <!-- meanmenu CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/meanmenu.min.css')}}" type="text/css" media="all" />
+    <!-- transitions CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/owl.transitions.css')}}" type="text/css" media="all" />
+    <!-- venobox CSS -->
+    <link rel="stylesheet" href="{{asset('venobox/venobox.css')}}" type="text/css" media="all" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-icons.css')}}" type="text/css" media="all" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" type="text/css" media="all" />
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}" type="text/css" media="all" />
+    <!-- ScrollCue CSS -->
+    <link rel="stylesheet" href="{{asset('assets/css/scrollCue.css')}}" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="{{asset('assets/css/dark.css')}}" type="text/css" media="all" />
+    <!-- modernizr js -->
+    <script src="{{asset('assets/js/vendor/modernizr-3.5.0.min.js')}}"></script>
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+    <!--========== loder========= -->
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="offcanvas__option">
-            <div class="offcanvas__links">
-                <a ">Sign in</a>
-             
+    <div class="loader_bg">
+        <div class="main-page">
+            <div class="loader">
+                <div class="spin-blend"></div>
+                <div class="spin-blend"></div>
+                <div class="spin-blend"></div>
+                <div class="spin-blend"></div>
+                <div class="spin-blend"></div>
             </div>
-          
-        </div>
-       
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__text">
-            <p>5-day return or refund guarantee.</p>
+            <div class="loading-text">
+                <div class="letter">E</div>
+                <div class="letter">l</div>
+                <div class="letter">e</div>
+                <div class="letter">v</div>
+                <div class="letter">a</div>
+                <div class="letter">t</div>
+                <div class="letter">e</div>
+                <div class="letter">.</div>
+                <div class="letter">y</div>
+                <div class="letter">o</div>
+                <div class="letter">u</div>
+                <div class="letter">r</div>
+                <div class="letter">.</div>
+                <div class="letter">G</div>
+                <div class="letter">r</div>
+                <div class="letter">i</div>
+                <div class="letter">n</div>
+                <div class="letter">d</div>
+                <div class="letter">.</div>
+                <div class="letter">.</div>
+            </div>
         </div>
     </div>
-    <!-- Offcanvas Menu End -->
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7">
-                        <div class="header__top__left">
-                            <p>5-day return or refund guarantee.</p>
+    <!-- ==========loder-end ===============-->
+
+    <!--==================================================-->
+    <!-- Start Search Popup Area -->
+    <!--==================================================-->
+    <div class="search-popup">
+        <button class="close-search style-two">
+        <i class="fa fa-times"></i>
+      </button>
+        <button class="close-search"><i class="fas fa-arrow-up"></i></button>
+       
+    </div>
+    <!--==================================================-->
+    <!-- End Search Popup Area -->
+    <!--==================================================-->
+
+    <div class="xs-sidebar-group info-group">
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+                <div class="widget-heading">
+                    <a href="#" class="close-side-widget">
+              <i class="far fa-times-circle"></i>
+            </a>
+                </div>
+                <div class="sidebar-textwidget">
+                    <!-- Sidebar Info Content -->
+                    <div class="sidebar-info-contents">
+                        <div class="content-inner">
+                            <div class="nav-logo">
+                                <a href="index.html">
+                                    <img src="{{asset('img/logo.png')}}" width="100" height="80" alt="logo" /></a>
+                            </div>
+                            <div class="content-box">
+                                <h2>About Us</h2>
+                                <p class="text">
+                                    At <strong>Elevate Your Grind</strong>, we craft timepieces that embody sophistication and ambition. Our luxury wristwatches are designed for individuals who aspire to achieve greatness, combining timeless elegance with modern precision. Each watch is more than just an accessory—it's a symbol of your dedication to success and style.
+                                </p>
+                                <a href="#" class="theme-btn btn-style-two">
+                                    <span>Discover More</span> <i class="fas fa-heart"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="contact-info">
+                                <h2>Contact Info</h2>
+                                <ul class="list-style-one">
+                                    <li>
+                                        <span class="icon flaticon-email"></span>No 11 Bmuko Duste Tipper garage
+                                    </li>
+                                    <li>
+                                        <span> <i class="bi bi-telephone-inbound"></i> </span
+                      >(+234) 070-478-88253
+                    </li>
+                    <li>
+                      <span><i class="bi bi-geo-alt"></i></span>info@elevateyourgrind.com.ng
+                                    </li>
+                                    {{-- <li>
+                                        <span><i class="bi bi-clock"></i></span>Week Days: 09.00 to 18.00 Sunday: Closed
+                                    </li> --}}
+                                </ul>
+                            </div>
+                            <!-- Social Box -->
+                            <ul class="social-box">
+                                <li class="facebook">
+                                    <a href="https://www.facebook.com/share/X5UcTdSis33xcYRU/" class="fab fa-facebook-f"></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="https://www.instagram.com/elevate.yourgrind?igsh=b201NmJ6aG5id2g0" class="fab fa-instagram"></a>
+                                </li>
+                                
+                                <li class="tiktok">
+                                    <a href="https://www.tiktok.com/@elevate.your.grind?_t=8rrI5WVKSTn&_r=1" class="fab fa-tiktok"></a>
+                                </li>
+                                <li class="youtube">
+                                    <a href="#" class="fab fa-linkedin-in"></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="header__top__right">
-                            <div class="header__top__links">
-                                <a ">Sign in</a>
-                               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="light-btn">
+        <button class="switch" type="button" onclick="themeToggle()">
+        <i class="fa fa-moon"></i>
+        <i class="fa fa-moon"></i>
+      </button>
+    </div>
+
+    <!--==================================================-->
+    <!-- Start Trendita Header Area -->
+    <!--==================================================-->
+    <div id="sticky-header" class="Trendita_nav_manu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav class="Trendita_menu">
+                        <ul class="nav_scroll">
+                            <li><a href="{{route('home')}}">Home</a></li>
+                          
+                            <li>
+                                <a href="#">Shop <span><i class="fas fa-chevron-down"></i></span
+                  ></a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{route('shop')}}">Shop</a></li>
+                                    <li><a href="{{route('cart.show')}}">Cart</a></li>
+                                  
+                                </ul>
+                            </li>
+                          
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a class="logo_img" href="{{route('home')}}" title="Elevate Your Grind">
+
+                <img src="{{asset('img/logo.png')}}" width="100" height="80" alt="logo" />
+              </a>
+                        <a class="main_sticky" href="{{route('home')}}" title="Elevate Your Grind">
+                            <img src="{{asset('img/logo.png')}}" width="100" height="80" alt="logo" />
+              </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="header-button">
+                        
+                      
+                        <div class="searchs-box-btn searchs-box-outer">
+                            <div class="nav-btn navSidebar-btn">
+                                <a><i class="fas fa-bars"></i></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dreamhub Mobile Menu  -->
+
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+        <div class="mobile-menu">
+            <nav class="Trendita_menu">
+                <ul class="nav_scroll">
+                    <li><a href="{{route('home')}}">Home</a></li>
+                   
+                    <li>
+                        <a href="#">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{route('shop')}}">Shop</a></li>
+                            <li><a href="{{route('cart.show')}}">Cart</a></li>
+                          
+                        </ul>
+                    </li>
+                 
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- End Main Menu Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start home-section  -->
+    <!--==================================================-->
+
+    <div class="hero-slide owl-carousel">
+        <div class="slider-area align-items-center d-flex">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="hero-title">
+                                    <h1>World's</h1>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero-title">
+                                    <h1>Designs</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-disc">
+                            <p>
+                                We are happy to introduce the new Lawson Collection. These are three quartz models designed with simplicity.
+                            </p>
+                        </div>
+                        <div class="slider-button">
+                            <a href="{{route('shop')}}">Shop Now <i class="bi bi-arrow-right"></i
+                ></a>
+                        </div>
+                        <div class="hero-contact">
+                            <a href="contact.html">Call +234 07047888253</a>
+                        </div>
+                        <div class="hero-number">
+                            <h3>02</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-area hero-bg align-items-center d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slider-title">
+                            <h5>Exclusive Offer -30% Off This Week</h5>
+                            <h2>Designer <span>Watches</span></h2>
+                            <p>
+                                We are happy to introduce the new lawson collection. these are three quartz models designed with simplicity and elegance kept in mind.
+                            </p>
+                        </div>
+                        <div class="hero-shape rotateme">
+                            <img src="assets/images/home-1/hero-shape.png" alt="" />
+                        </div>
+                        <div class="hero-button">
+                            <a href="{{route('shop')}}">Shop now <i class="bi bi-arrow-right"></i
+                ></a>
+                        </div>
+                        <div class="hero-contact">
+                            <a href="contact.html">Call +234 07047888253</a>
+                        </div>
+                        <div class="hero-number">
+                            <h3>01</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-area slide-bg align-items-center d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slider-title">
+                            <h5>Exclusive Offer -30% Off This Week</h5>
+                            <h2>Designer <span>Watches</span></h2>
+                            <p>
+                                We are happy to introduce the new lawson collection. these are three quartz models designed with simplicity and elegance kept in mind.
+                            </p>
+                        </div>
+                        <div class="hero-button">
+                            <a href="{{route('shop')}}">Shop now <i class="bi bi-arrow-right"></i
+                ></a>
+                        </div>
+                        <div class="hero-contact">
+                            <a href="contact.html">Call +234 07047888253</a>
+                        </div>
+                        <div class="hero-number">
+                            <h3>03</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-counter"></div>
+
+
+    <!--==================================================-->
+    <!-- End Homex Hero Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start-about Area -->
+    <!--==================================================-->
+
+    <div class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-thumb">
+                        <img src="assets/images/home-1/ab-1.png" alt="" />
+                    </div>
+                    <div class="about-shape rotateme">
+                        <img src="assets/images/home-1/about-shape.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-title style">
+                        <h2>Our Exclusive Collection</h2>
+                        <p>
+                            Experience the pinnacle of craftsmanship and elegance with our curated selection of luxury timepieces designed for the discerning collector.
+                        </p>
+                    </div>
+                    <div class="section-button">
+                        <a href="about.html">#LuxuryTimepieces
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- End about Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start feature Area -->
+    <!--==================================================-->
+
+    <div class="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <div class="section-title text-center">
+                            <h2>View our Collections</h2>
+                            <p>
+                             
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-inner-box">
+                            <div class="sel-thumb">
+                                <img src="{{asset('assets/images/home-1/set-1.png')}}" alt="" />
+                            </div>
+                            <div class="sel-comition">
+                                <span>-23%</span>
+                            </div>
+                            <div class="sel-content">
+                                <h4>CASIO</h4>
+                                <p>$350</p>
+                            </div>
+                            <div class="sel-rating">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-out-box">
+                            <div class="feature-thumb">
+                                <img src="assets/images/home-1/sel-h3.png" alt="" />
+                            </div>
+                            <div class="sel-comition styles">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="sel-button">
+                                <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-inner-box">
+                            <div class="sel-thumb">
+                                <img src="assets/images/home-1/sel-2.png" alt="" />
+                            </div>
+                            <div class="sel-comition">
+                                <span>-33%</span>
+                            </div>
+                            <div class="sel-content">
+                                <h4>POEDAGAR</h4>
+                                <p>$600</p>
+                            </div>
+                            <div class="sel-rating">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-out-box">
+                            <div class="feature-thumb">
+                                <img src="{{asset('assets/images/home-1/sel-h3.png')}}" alt="" />
+                            </div>
+                            <div class="sel-comition styles">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="sel-button">
+                                <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-inner-box">
+                            <div class="sel-thumb">
+                                <img src="assets/images/home-1/sel-3.png" alt="" />
+                            </div>
+                            <div class="sel-comition">
+                                <span>-70%</span>
+                            </div>
+                            <div class="sel-content">
+                                <h4>CATIER</h4>
+                                <p>$580</p>
+                            </div>
+                            <div class="sel-rating">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-out-box">
+                            <div class="feature-thumb">
+                                <img src="assets/images/home-1/sel-h3.png" alt="" />
+                            </div>
+                            <div class="sel-comition styles">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="sel-button">
+                                <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-inner-box">
+                            <div class="sel-thumb">
+                                <img src="assets/images/home-1/sel-4.png" alt="" />
+                            </div>
+                            <div class="sel-comition">
+                                <span>-51%</span>
+                            </div>
+                            <div class="sel-content">
+                                <h4>CASIO</h4>
+                                <p>$750</p>
+                            </div>
+                            <div class="sel-rating">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-out-box">
+                            <div class="feature-thumb">
+                                <img src="assets/images/home-1/sel-h4.png" alt="" />
+                            </div>
+                            <div class="sel-comition styles">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="sel-button">
+                                <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- End feature Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start-about Area -->
+    <!--==================================================-->
+
+    <div class="about-two-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title style">
+                        <h2>Timeless Craftsmanship for Visionaries</h2>
+                        <p>
+                            At <strong>Elevate Your Grind</strong>, we redefine timekeeping with luxury wristwatches that seamlessly blend sophistication, precision, and artistry. Each design is a tribute to those who dare to surpass limits and embrace excellence, making every moment extraordinary.
+                        </p>
+                    </div>
+                    <div class="section-button">
+                        <a href="about.html">SHOP  NOW </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-two-thumb">
+                        <img src="assets/images/home-1/ab-2.png" alt="Luxury Wristwatch" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--==================================================-->
+    <!-- End about Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start service-section  -->
+    <!--==================================================-->
+
+    {{-- <div class="service-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="service-single-box">
+                        <div class="service-item">
+                            <div class="service-number">
+                                <span>01.</span>
+                            </div>
+                            <div class="section-title">
+                                <h4><a href="service-details.html">Form and Function</a></h4>
+                                <p>
+                                    Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem non mollis. praesent pretium tellus in tortor viverra condimentum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-number">
+                                <span>02.</span>
+                            </div>
+                            <div class="section-title">
+                                <h4>
+                                    <a href="service-details.html">Crafting Time with Precision</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                  </p>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-number">
+                  <span>03.</span>
+                </div>
+                <div class="section-title">
+                  <h4>
+                    <a href="service-details.html">Stainless Steel in Design</a>
+                                </h4>
+                                <p>
+                                    Praesent pretium tellus in tortor viverra condimentum nullam dignissim facilisis nisl, accumsan placerat justo ultricies vel. Vivamus finibus mi a neque pretium,orci id,.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="service-single-box">
+                        <div class="service-item">
+                            <div class="service-number">
+                                <span>04.</span>
+                            </div>
+                            <div class="section-title">
+                                <h4>
+                                    <a href="service-details.html">A Stainless Steel Journey</a>
+                                </h4>
+                                <p>
+                                    Aliquet eget sit amet tellus adipiscing enim. non quam lacus suspendisse faucibus interdum posuere. lobortis aliquam faucibus purus in massa tempor nec.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-number">
+                                <span>05.</span>
+                            </div>
+                            <div class="section-title">
+                                <h4>
+                                    <a href="service-details.html">Exquisite Leather Straps</a>
+                                </h4>
+                                <p>
+                                    The band is made of high-grade eco-leather with a soft nubuck lining for extra comfort. Obtains excellent wearing qualities tempor nec aliquam lacus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-number">
+                                <span>06.</span>
+                            </div>
+                            <div class="section-title">
+                                <h4>
+                                    <a href="service-details.html">Leather Straps for Watches</a
+                    >
+                  </h4>
+                  <p>
+                    Dicta sunt explicabo. nemo enim ipsam voluptatem voluptas
+                    aspernatur aut odit aut fugit, sed quia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> --}}
+
+    <!--==================================================-->
+    <!-- end svice-section  -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start feature-two-section  -->
+    <!--==================================================-->
+
+    <div class="feature-two-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title text-center">
+              <h2>Exploring Watches Collection</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="feature-box">
+              <div class="feature-inner-box style-02">
+                <div class="sel-thumb">
+                  <img src="assets/images/home-1/col-1.png" alt="" />
+                </div>
+                <div class="sel-comition">
+                  <span>-23%</span>
+                </div>
+                <div class="sel-content style-03">
+                  <h4>CASIO</h4>
+                  <p>$350</p>
+                </div>
+                <div class="sel-rating">
+                  <ul>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="feature-out-box">
+                <div class="feature-thumb">
+                  <img src="assets/images/home-1/col-h.png" alt="" />
+                </div>
+                <div class="sel-comition styles">
+                  <span><i class="far fa-heart"></i></span>
+                </div>
+                <div class="sel-button style-04">
+                  <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-inner-box style-02">
+                            <div class="sel-thumb">
+                                <img src="assets/images/home-1/col-2.png" alt="" />
+                            </div>
+                            <div class="sel-comition">
+                                <span>-33%</span>
+                            </div>
+                            <div class="sel-content style-03">
+                                <h4>CASIO</h4>
+                                <p>$600</p>
+                            </div>
+                            <div class="sel-rating">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-out-box">
+                            <div class="feature-thumb">
+                                <img src="assets/images/home-1/col-h2.png" alt="" />
+                            </div>
+                            <div class="sel-comition styles">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="sel-button style-04">
+                                <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-inner-box style-02">
+                            <div class="sel-thumb">
+                                <img src="assets/images/home-1/col-3.png" alt="" />
+                            </div>
+                            <div class="sel-comition">
+                                <span>-70%</span>
+                            </div>
+                            <div class="sel-content style-03">
+                                <h4>CASIO</h4>
+                                <p>$580</p>
+                            </div>
+                            <div class="sel-rating">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-out-box">
+                            <div class="feature-thumb">
+                                <img src="assets/images/home-1/col-h3.png" alt="" />
+                            </div>
+                            <div class="sel-comition styles">
+                                <span><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="sel-button style-04">
+                                <a href="{{route('shop')}}">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================================================-->
+    <!-- end feature-two-section  -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- start blog-section -->
+    <!--==================================================-->
+
+    {{-- <div class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center styles-01">
+                        <h2>From The Blog</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. proin tincidunt nunc lorem, nec faucibus mi facilisis eget. mauris laoreet, nisl id faucibus pellentesque, mi mi tempor enim, sit amet interdum felis nibh a leo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-single-box" data-cue="zoomIn">
+                        <div class="blog-thumb">
+                            <img src="assets/images/home-1/bl-1.png" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-name">
+                                <a href="blog-details.html">Tommy Hilfiger</a>
+                            </div>
+                            <div class="blog-meta">
+                                <p>Oct 22,2024</p>
+                            </div>
+                            <div class="section-title style-05">
+                                <h4>
+                                    <a href="blog-details.html">Digital jumping-seconds display</a
+                    >
+                  </h4>
+                  <p>
+                    Take your life to the next level with saga, built-in dolor
+                    personal advisor with our expert with 10+ lorem nibh years
+                    of experience.
+                  </p>
+                </div>
+                <div class="service-button">
+                  <a href="about.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-single-box" data-cue="zoomIn">
+                        <div class="blog-thumb">
+                            <img src="assets/images/home-1/bl-2.png" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-name">
+                                <a href="blog-details.html">Tommy Hilfiger</a>
+                            </div>
+                            <div class="blog-meta">
+                                <p>Oct 22,2024</p>
+                            </div>
+                            <div class="section-title style-05">
+                                <h4>
+                                    <a href="blog-details.html">Exploring Tourbillon Watches</a>
+                                </h4>
+                                <p>
+                                    Take your life to the next level with saga, built-in dolor personal advisor with our expert with 10+ lorem nibh years of experience.
+                                </p>
+                            </div>
+                            <div class="service-button">
+                                <a href="about.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-single-box" data-cue="zoomIn">
+                        <div class="blog-thumb">
+                            <img src="assets/images/home-1/bl-3.png" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-name">
+                                <a href="blog-details.html">Tommy Hilfiger</a>
+                            </div>
+                            <div class="blog-meta">
+                                <p>Oct 22,2024</p>
+                            </div>
+                            <div class="section-title style-05">
+                                <h4>
+                                    <a href="blog-details.html">Navigating the Digital Etiquette</a
+                    >
+                  </h4>
+                  <p>
+                    Take your life to the next level with saga, built-in dolor
+                    personal advisor with our expert with 10+ lorem nibh years
+                    of experience.
+                  </p>
+                </div>
+                <div class="service-button">
+                  <a href="about.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+
+    <!--==================================================-->
+    <!-- End blog-section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Footer Area -->
+    <!--==================================================-->
+
+    <div class="footer-area">
+        <div class="container">
+            
+            <hr />
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-cue="zoomIn">
+                    <div class="footer-widget-contact">
+                        <div class="footer-widget-logo">
+                            <a href="{{route('home')}}"><img src="{{asset('img/logo.png')}}"  height="80" width="100" alt=""
+                /></a>
+                        </div>
+                        <div class="footer-disc">
+                           
+                        </div>
+                        <br>
+                        <div class="footer_icon">
+                            <a href="index.html"><i class="fab fa-facebook-f"></i></a>
+                            <a href="index.html"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="index.html"><i class="fab fa-instagram"></i></a>
+                            <a href="index.html"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                    <div class="footer-widget-content">
+                        <div class="footer-widget-title">
+                            <h4>Customer Services</h4>
+                        </div>
+                        <div class="footer-widget-menu">
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Track Your Orders</a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6" data-cue="zoomIn">
+                    <div class="footer-widget-content">
+                        <div class="footer-widget-title">
+                            <h4>Company</h4>
+                        </div>
+                        <div class="footer-widget-menu">
+                            <ul>
+                              
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-cue="zoomIn">
+                    <div class="footer-widget-content">
+                        <div class="footer-widget-title">
+                            
+                        </div>
+                        <div class="footer-widget-menu">
                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
+            <hr class="style-2" />
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        {{-- <a href="{{route('home')}}" style="font-size: 24px; color:black; font:bolder;">Elevate your Grind <span style="color: red">.</span></a> --}}
-                        <a href="./index.html"><img src="{{asset('img/logo.png')}}" alt="" width="82" height="48"></a>
+                <div class="col-md-12 text-center">
+                    <div class="footer-bottom-content">
+                        <h4><span>Mobiveerio © 2024</span> All Rights Reserved</h4>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <nav class="header__menu mobile-menu">
-                        <ul>
-                            <li class="active"><a href="{{route('home')}}">Home</a></li>
-                            <li><a href="{{route('collection')}}">View Collection</a></li>
-                            <li><a href="{{route('cart.show')}}">View Cart</a></li>
-                            {{-- <li><a href="./blog.html">Blog</a></li> --}}
-                            <li><a href="{{route('contact')}}">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__nav__option">
-                        <a href="#" id="cart-link"  style="color: red !important; font-size:18px">
-                            <img src="{{ asset('img/icon/cart.png.webp') }}" alt="">
-                            <span id="cart-count">0</span> items
-                        </a>
-                       
-                    </div>
-                </div>
-                
-                
-               
-            </div>
-            <div class="canvas__open"><i class="fa fa-bars"></i></div>
-        </div>
-    </header>
-    <!-- Header Section End -->
-
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__items set-bg" data-setbg="{{asset('img/watch.jpg')}}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-7 col-md-8">
-                            <div class="hero__text">
-                                <h6 style="color: white !important">Precision Engineering</h6>
-                                <h2 style="color: white !important">Elevate Your Grind Signature Series</h2>
-                                <p style="color: #fff !important; font-size:28px; font-weight:900">Smoking Hot Deals on Timeless Pieces</p>
-                                <a href="{{route('collection')}}" class="primary-btn" >Explore Collection<span class="arrow_right"></span></a>
-                                <div class="hero__social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__items set-bg" data-setbg="{{asset('img/watch2.jpg')}}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-7 col-md-8">
-                            <div class="hero__text">
-                                <h6 style="color: white !important">Limited Edition</h6>
-                                <h2 style="color: white !important">Timeless Precision</h2>
-                                <p style="color: #fff !important; font-size:28px; font-weight:900">Smoking Hot Deals on Timeless Pieces</p>
-                                <a href="#" class="primary-btn" style="color: white !important">Shop now <span class="arrow_right"></span></a>
-                                <div class="hero__social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
-<br><br>
-    <!-- Product Section Begin -->
-    <section class="product spad" style="margin-top: 22px">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="filter__controls">
-                        <li class="active" data-filter="*">Best Sellers</li>
-                        <li data-filter=".new-arrivals">New Arrivals</li>
-                        <li data-filter=".hot-sales">Hot Sales</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row product__filter">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-1.jpeg')}}">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>G-shock Protection</h6>
-                            <a href="#" class="add-cart" 
-                            data-product-name="G-shock Protection" 
-                            data-product-price="67.24" 
-                            data-product-id="1">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦67.24</h5>
-                            <div class="product__color__select">
-                                <label for="pc-1">
-                                    <input type="radio" id="pc-1">
-                                </label>
-                                <label class="active black" for="pc-2">
-                                    <input type="radio" id="pc-2">
-                                </label>
-                                <label class="grey" for="pc-3">
-                                    <input type="radio" id="pc-3">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-2.jpeg')}}">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Piqué Biker Jacket</h6>
-                            <a href="#" class="add-cart" 
-                            data-product-name="Piqué Biker Jacket" 
-                            data-product-price="67.24" 
-                            data-product-id="1">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦67.24</h5>
-                            <div class="product__color__select">
-                                <label for="pc-4">
-                                    <input type="radio" id="pc-4">
-                                </label>
-                                <label class="active black" for="pc-5">
-                                    <input type="radio" id="pc-5">
-                                </label>
-                                <label class="grey" for="pc-6">
-                                    <input type="radio" id="pc-6">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-9.jpeg')}}">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Poedagar</h6>
-                            <a href="#" class="add-cart" 
-                            data-product-name="Poedagar" 
-                            data-product-price="67.24" 
-                            data-product-id="1">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦43.48</h5>
-                            <div class="product__color__select">
-                                <label for="pc-7">
-                                    <input type="radio" id="pc-7">
-                                </label>
-                                <label class="active black" for="pc-8">
-                                    <input type="radio" id="pc-8">
-                                </label>
-                                <label class="grey" for="pc-9">
-                                    <input type="radio" id="pc-9">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-4.jpeg')}}">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Poedagar</h6>
-                            <a href="#" class="add-cart" 
-                            data-product-name="Poedagar" 
-                            data-product-price="67.24" 
-                            data-product-id="1">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦60.9</h5>
-                            <div class="product__color__select">
-                                <label for="pc-10">
-                                    <input type="radio" id="pc-10">
-                                </label>
-                                <label class="active black" for="pc-11">
-                                    <input type="radio" id="pc-11">
-                                </label>
-                                <label class="grey" for="pc-12">
-                                    <input type="radio" id="pc-12">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-11.jpeg')}}">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Wristwatch case</h6>
-                            <a href="#" class="add-cart" 
-                            data-product-name="Wristwatch case" 
-                            data-product-price="67.24" 
-                            data-product-id="1">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦31.37</h5>
-                            <div class="product__color__select">
-                                <label for="pc-13">
-                                    <input type="radio" id="pc-13">
-                                </label>
-                                <label class="active black" for="pc-14">
-                                    <input type="radio" id="pc-14">
-                                </label>
-                                <label class="grey" for="pc-15">
-                                    <input type="radio" id="pc-15">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-6.jpeg')}}">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Cartier</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦98.49</h5>
-                            <div class="product__color__select">
-                                <label for="pc-16">
-                                    <input type="radio" id="pc-16">
-                                </label>
-                                <label class="active black" for="pc-17">
-                                    <input type="radio" id="pc-17">
-                                </label>
-                                <label class="grey" for="pc-18">
-                                    <input type="radio" id="pc-18">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-7.jpeg')}}">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Casio</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦49.66</h5>
-                            <div class="product__color__select">
-                                <label for="pc-19">
-                                    <input type="radio" id="pc-19">
-                                </label>
-                                <label class="active black" for="pc-20">
-                                    <input type="radio" id="pc-20">
-                                </label>
-                                <label class="grey" for="pc-21">
-                                    <input type="radio" id="pc-21">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="{{asset('product/prod-8.jpeg')}}">
-                            <ul class="product__hover">
-                                <li><a href="#"><img src="{{asset('img/icon/heart.png.webp')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/compare.png.webp')}}" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="{{asset('img/icon/search.png.webp')}}" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Poedagar</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>₦26.28</h5>
-                            <div class="product__color__select">
-                                <label for="pc-22">
-                                    <input type="radio" id="pc-22">
-                                </label>
-                                <label class="active black" for="pc-23">
-                                    <input type="radio" id="pc-23">
-                                </label>
-                                <label class="grey" for="pc-24">
-                                    <input type="radio" id="pc-24">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Product Section End -->
-
-   <!-- Categories Section Begin -->
-<section class="categories spad">
-    <div class="container">
-        <div class="row">
-            <!-- Text Section -->
-            <div class="col-lg-3">
-                <div class="categories__text">
-                    <h2>Luxury Watches <br /> <span>Exclusive Editions</span> </h2>
-                </div>
-            </div>
-
-            <!-- Hot Deal Section -->
-            <div class="col-lg-4">
-                <div class="categories__hot__deal">
-                    <img src="{{asset('product/prod-8.jpeg')}}" alt="Luxury Watch Hot Deal">
-                    <div class="hot__deal__sticker">
-                        <span>Sale Of</span>
-                        <h5>₦999.99</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Deal Countdown Section -->
-            <div class="col-lg-4 offset-lg-1">
-                <div class="categories__deal__countdown">
-                    <span>Deal Of The Week</span>
-                    <h2>Poedagar</h2>
-                    <div class="categories__deal__countdown__timer" id="countdown">
-                        <div class="cd-item">
-                            <span>5</span>
-                            <p>Days</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>12</span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>30</span>
-                            <p>Minutes</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>45</span>
-                            <p>Seconds</p>
-                        </div>
-                    </div>
-                    <a href="{{route('collection')}}" class="primary-btn">Shop now</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- Categories Section End -->
+    <!--==================================================-->
+    <!-- End Footer Area -->
+    <!--==================================================-->
 
+    <!--==================================================-->
+    <!-- Start scrollup section Section -->
+    <!--==================================================-->
+    <div class="prgoress_indicator active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 270.456;
+          "
+        ></path>
+      </svg>
+    </div>
+    <!--==================================================-->
+    <!-- Start scrollup section Section -->
+    <!--==================================================-->
 
-    <!-- Instagram Section Begin -->
-    <section class="instagram spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="instagram__pic">
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-1.jpeg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-11.jpeg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="i{{asset('product/prod-2.jpeg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-10.jpeg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-5.jpeg')}}"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="{{asset('product/prod-8.jpeg')}}"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="instagram__text">
-                        <h2>Our Exclusive Collection</h2>
-                        <p>Experience the pinnacle of craftsmanship and elegance with our curated selection of luxury timepieces designed for the discerning collector.</p>
-                        <h3>#LuxuryTimepieces</h3>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- Instagram Section End -->
+    <script src="{{asset('assets/js/vendor/jquery-3.6.2.min.js')}}"></script>
 
-    {{-- <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Exclusive Selections</span>
-                        <h2>Timeless Luxury Watches</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="{{asset('inage/3.jpg')}}"></div>
-                        <div class="blog__item__text">
-                            <span><img src="{{asset('img/icon/calendar.png.webp')}}" alt=""> 16 February 2020</span>
-                            <span>Precision Engineering</span>
-                            <h5>Chronomaster Heritage 2023</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="{{asset('inage/6.jpg')}}"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
-                            <h5>Eternity Bands Do Last Forever</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="{{asset('inage/1.jpg')}}"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
-                            <h5>The Health Benefits Of Sunglasses</h5>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Latest Blog Section End --> --}}
+    <script src="{{asset('assets/js/popper.min.js')}}"></script>
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
-                        </div>
-                        <p>The customer is at the heart of our unique business model, which includes design.</p>
-                        <a href="#"><img src="{{asset('img/payment.png.webp')}}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                   
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Shopping</h6>
-                        <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Delivary</a></li>
-                            <li><a href="#">Return & Exchanges</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="footer__copyright__text">
-                        
-                        <p>Copyright ©
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>2024 All rights reserved | Built with love <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://mobiverio.com" target="_blank">Mobiverio</a>
-                        </p>
-                     
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <script src="{{asset('assets/js/waypoints.min.js')}}"></script>
 
-        gtag('config', 'UA-23581568-13');
-    </script>
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+    <script src="{{asset('assets/js/sign.up.login.js')}}"></script>
 
-    // Update cart count display
-    function updateCartCount() {
-        document.getElementById('cart-count').textContent = cartCount;
-    }
+    <script src="{{asset('assets/js/jquery.celendar.js')}}"></script>
 
-    // Add to Cart event listener
-    document.querySelectorAll('.add-cart').forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-            
-            // Get product details from data attributes
-            const productId = this.getAttribute('data-product-id');
-            const productName = this.getAttribute('data-product-name');
-            const productPrice = this.getAttribute('data-product-price');
+    <script src="{{asset('assets/js/imagesloaded.pkgd.min.js')}}"></script>
 
-            // Check if product is already in the cart
-            const existingProduct = cart.find(product => product.id === productId);
+    <script src="{{asset('venobox/venobox.js')}}"></script>
 
-            if (existingProduct) {
-                existingProduct.quantity += 1;
-            } else {
-                cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
-            }
+    <script src="{{asset('assets/js/animated-text.js')}}"></script>
 
-            // Update localStorage
-            localStorage.setItem('cart', JSON.stringify(cart));
+    <script src="{{asset('venobox/venobox.min.js')}}"></script>
 
-            // Increment cart count and update display
-            cartCount++;
-            updateCartCount();
+    <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
 
-            console.log(cart); // Display cart contents in console for testing
-        });
-    });
+    <script src="{{asset('assets/js/jquery.meanmenu.js')}}"></script>
 
-    // Redirect to cart page on click
-    document.querySelector('.header__nav__option a').addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default link behavior
+    <script src="{{asset('assets/js/jquery.scrollUp.js')}}"></script>
 
-        // Redirect to cart page
-        window.location.href = '/cart'; // Update this URL to match your cart page
-    });
+    <script src="{{asset('assets/js/jquery.barfiller.js')}}"></script>
 
-    // Initialize cart count display
-    updateCartCount();
-});
+    <script src="{{asset('assets/js/theme.js')}}"></script>
 
-    </script>
-    
-
+    <script src="{{asset('assets/js/scrollCue.min.js')}}"></script>
 </body>
 
 </html>

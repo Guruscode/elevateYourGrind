@@ -1,100 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: #f0f2f5;
-            font-family: 'Arial', sans-serif;
-        }
+  <!-- Design by foolishdeveloper.com -->
+    <title>Admin Panel</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 730px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 700px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
 
-        .login-container {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 70px;
-            padding: 40px;
-            max-width: 400px;
-            margin: auto;
-        }
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
 
-        .login-container h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .login-container .form-control {
-            border-radius: 30px;
-            padding: 12px 20px;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 12px;
-            border-radius: 30px;
-            font-size: 16px;
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .login-container button:hover {
-            background: #0056b3;
-        }
-
-        .login-container .form-group {
-            margin-bottom: 20px;
-        }
-
-        .login-footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
-        .login-footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .login-footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="login-container">
-            <h2>Admin Login</h2>
-            <form action="{{ route('admin.login') }}" method="POST">
-                @csrf
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-
-            <div class="login-footer">
-                <p>Forgot your password? <a href="#">Reset it</a></p>
-            </div>
-        </div>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
+    <form action="{{ route('admin.login') }}" method="POST">
+        @csrf
+        <h3>Welcme Back </h3>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <label for="username">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email " id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button type="submit">Log In</button>
+        <div  class="social">
+            <p>Forgot your password? <a href="#">Reset it</a></p>
+        </div>
+    </form>
 </body>
-
 </html>

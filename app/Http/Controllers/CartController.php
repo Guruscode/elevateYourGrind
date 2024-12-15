@@ -21,7 +21,7 @@ class CartController extends Controller
     
     public function show()
     {
-        $cart = session('cart', []); // Retrieve cart data from session
-        return view('cart', ['cart' => $cart]);
+        // Retrieve cart data from session
+        return view('cart');
     }
 }

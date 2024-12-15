@@ -1,0 +1,141 @@
+.darkmode {
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.darkmode h1 {
+    color: #fff !important;
+}
+
+.darkmode h2 {
+    color: #fff !important;
+}
+
+.darkmode h3 {
+    color: #fff !important;
+}
+
+.darkmode h4 {
+    color: #fff !important;
+}
+
+.darkmode h4 a {
+    color: #fff !important;
+}
+
+.darkmode h5 {
+    color: #fff !important;
+}
+
+.darkmode a {
+    color: #fff !important;
+}
+
+.darkmode p {
+    color: #fff !important;
+}
+
+.darkmode .header-src-btn i,
+.darkmode .nav-btn a i {
+    color: #fff !important;
+}
+
+.darkmode .about-shape img {
+    filter: invert(1);
+}
+
+.darkmode .blog-content,
+.darkmode .cntr-bg-up1,
+.darkmode .feature-inner-box {
+    background-color: rgb(10, 10, 10);
+}
+
+.darkmode .single_team_icon a {
+    color: rgb(10, 10, 10) !important;
+}
+
+.darkmode .service-section {
+    background-image: url(../images/home-1/ser-bg-dark.png);
+}
+
+.darkmode .slider-area {
+    background-image: url(../images/home-1/slide-dark.png);
+}
+
+.darkmode .logo img {
+    filter: brightness(0) invert(1);
+}
+
+/*
+<!-- =======================================-->
+<!--inner Dark Css-->
+<!-- =======================================-->*/
+
+.darkmode .blog-single-details,
+.darkmode .single-widget-item,
+.darkmode .blog-list-left {
+    background-color: rgb(28, 26, 26);
+}
+
+.darkmode .form-box input,
+.darkmode .form-box textarea,
+.darkmode .blog-list-left input[type="email"] {
+    background-color: rgb(28, 26, 26);
+    color: #fff;
+}
+
+.darkmode .form-box input::placeholder,
+.darkmode .form-box textarea::placeholder,
+.darkmode .blog-list-left input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.darkmode .calendar ul li {
+    color: rgb(255, 255, 255);
+}
+
+.darkmode .cart-totals,
+.darkmode .single-shop-box,
+.darkmode .single-box,
+.darkmode .single-shop {
+    background-color: rgb(28, 26, 26);
+}
+
+.darkmode .cart-section,
+.darkmode .subscribes-section {
+    background-color: rgb(28, 26, 26);
+}
+
+.darkmode .sel-button a:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.darkmode input.form-field:not([type="submit"]):not([type="checkbox"]):not( [type="radio"]):not([type="range"])::placeholder {
+    color: rgb(255, 255, 255) !important;
+}
+
+.darkmode input.form-field:not([type="submit"]):not([type="checkbox"]):not( [type="radio"]):not([type="range"]) {
+    background-color: rgb(28, 26, 26);
+}
+
+.darkmode select.form-field {
+    background-color: rgb(28, 26, 26);
+}
+
+.darkmode .social-box li a {
+    color: rgb(28, 26, 26) !important;
+}
+
+.darkmode .checkout-box {
+    background-color: rgb(28, 26, 26);
+}
+
+.darkmode .table>thead {
+    color: rgb(255, 255, 255);
+}
+
+.darkmode .table th,
+.darkmode .table td {
+    color: rgb(255, 255, 255);
+}
